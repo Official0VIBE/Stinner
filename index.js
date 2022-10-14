@@ -20,6 +20,7 @@ fs.readdirSync('./handlers').forEach((handler) => {
   require(`./handlers/${handler}`)(client)
 });
 require('./Intervals');
+// سوي ملف .env
 client.login(process.env.TOKEN);
 
 
